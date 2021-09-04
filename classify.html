@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classify Chronic Kidney Disease</title>
+<meta name="description" content="   - an AI project by NightLight AI that aims to uses AI to counter Chronic Kidney Disease.">
+<meta name="keywords" content="  , chronic kidney disease, nightlight ai, nephron, ayush, anand">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link rel="stylesheet" href="css/styles-merged.css">
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/classify.min.css">
+<link rel="icon" type="image/png" href="assets/logo192.png">
+<noscript>
+    Kindly enable JavaScript in your web browser. to utilize our services to their full potential it is recommended to have JavaScript enabled.
+</noscript>
+
+</head>
+<body>
+
+<header role="banner" class="probootstrap-header">
+<div class="container-fluid">
+<a href="index" class="probootstrap-logo">Nephron<span>AI</span></a>
+<a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
+<div class="mobile-menu-overlay"></div>
+<nav role="navigation" class="probootstrap-nav hidden-xs">
+<ul class="probootstrap-main-nav">
+<li><a href="index">Home</a></li>
+<li><a href="contribute">Contribute</a></li>
+<li><a href="about">About</a></li>
+<li><a href="https://ayushanand18.github.io/">NightLight AI</a></li>
+</ul>
+<div class="extra-text visible-xs">
+<a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+<h5>Social</h5>
+<ul class="social-buttons">
+<li><a href="https://twitter.com/theayushanand"><i class="icon-twitter"></i></a></li>
+<li><a href="#"><i class="icon-facebook"></i></a></li>
+<li><a href="#"><i class="icon-instagram2"></i></a></li>
+</ul>
+<p><small>&copy; Copyright 2020 NightLight AI. All Rights Reserved.</small></p>
+</div>
+</nav>
+</div>
+</header>
+
+
+<section class="probootstrap-intro" style="" data-stellar-background-ratio="0.5">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-7 probootstrap-intro-text">
+<h1 class="probootstrap-animate">Step #1: Predict the Disease</h1>
+<div class="probootstrap-subtitle probootstrap-animate">
+<h2>Are you ready? Fill the form below to know whether you have Chronic Kidney Disease or not.</h2>
+</div>
+<p class="watch-intro probootstrap-animate"><button class="btn btn-primary openmodal open-modal">Try it NOW</button></p><br>
+<span class="info">This is a Machine Learning Classification. Therefore, results might be inaccurate. We don't certify 100% authenticity. Read the <a href="terms" >terms here</a>.</span>
+</div>
+</div>
+</div>
+</section>
+
+<div class="form-container">
+    <!-- Form fields with Information to gather user input -->
+    <div class="qone">
+        <form id="forms classify-form">
+        <span class="clos">&times; Close</span> <span>(1 of 8)</span>
+        <h4>Specific Gravity:</h4>
+        <p>You need to get a medical test for this or you can skip it. It is <i>numeric</i></p>
+        <input type="number" placeholder="" id="sgt"/><br/><br/>
+        <input type="submit" class="btn btn-primary next" value="Next">
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What is Specific Gravity?</a>
+            <p class="information">Specific Gravity refers to the ratio of the density of a substance to the density of a standard, usually water for a liquid or solid, and air for a gas. It is also measured for Human Body.</p>
+        </div>
+        </form>
+    </div>
+
+    <div class="qtwo">
+        <form id="forms classify-form">
+            <span class="back">< Back</span> (<span>2 of 8</span>)
+        <h4>Albumin (in urine)</h4>
+        <p>Select from this list</p>
+        <br/><select class="select" id="alt">
+        <option value="">--Select--</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        </select><br/><br/>
+        <input type="submit" class="btn btn-primary next" value="Next">
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What is Albumin?</a>
+            <p class="information">Albumin is a protein made by your liver which helps keep fluid in your bloodstream so it doesn't leak into other tissues. It is also carries various substances throughout your body, including hormones, vitamins, and enzymes.</p>
+        </div>
+        </form>
+    </div>
+
+    <div class="qthree">
+        <form id="forms classify-form">
+            <span class="back">< Back</span> (<span>3 of 8</span>)
+        <h4>Serum Creatinine</h4>
+        <p>The Serum creatinine in <i>mg/dl</i><br/>
+        For example 1.2</p><br/>
+        <input type="number" placeholder="" id="sct"/><br/><br/>
+        <input type="submit" class="btn btn-primary next" value="Next">
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What is Serum Creatinine?</a>
+            <p class="information">A serum creatinine test measures the level of creatinine in your blood and provides an estimate of how well your kidneys filter (glomerular filtration rate).</p>
+        </div>
+        </form>
+    </div>
+    <div class="qfour">
+        <form id="forms classify-form">
+            <span class="back">< Back</span> (<span>4 of 8</span>)
+        <h4>Heamoglobin</h4>
+        <p>The pigment that gives blood its red color, in <i>grams</i>. For example, 15.2</p>
+        <br/><input type="number" placeholder="" id="hemot"/><br/><br/>
+        <input type="submit" class="btn btn-primary next" value="Next">
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What is Heamoglobin?</a>
+            <p class="information">Haemoglobin is a red protein responsible for transporting oxygen in the blood of vertebrates. Its molecule comprises four subunits, each containing an iron atom bound to a haem group.</p>
+        </div>
+        </form>
+    </div>
+    <div class="qfive">
+        <form id="forms classify-form">
+            <span class="back">< Back</span> (<span>5 of 8</span>)
+        <h4>Packed Cell Volume</h4>
+        <p>Look into your blood report in the lipids section. it is ussually <i>numeric</i>. For example, 64 </p>
+        <br/><input type="number" placeholder="" id="pcvt"/><br/><br/>
+        <input type="submit" class="btn btn-primary next" value="Next">
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What is Packed Cell Volume?</a>
+            <p class="information">The packed cell volume (PCV) is a measurement of the proportion of blood that is made up of cells. The value is expressed as a percentage or fraction of cells in blood. For example, a PCV of 40% means that there are 40 millilitres of cells in 100 millilitres of blood.</p>
+        </div>
+        </form>
+    </div>
+    <div class="qsix">
+        <form id="forms classify-form">
+            <span class="back">< Back</span> (<span>6 of 8</span>)
+        <h4>White Blood Cell Count</h4>
+        <p>The White blood cell count in <i>cells/cumm</i>. For example, 7800</p>
+        <br/><input type="number" placeholder="" id="wct"/><br/><br/>
+        <input type="submit" class="btn btn-primary next" value="Next">
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What are White Blood Cells?</a>
+            <p class="information">White blood cells (WBCs), also called leukocytes or leucocytes, are the cells of the immune system that are involved in protecting the body against both infectious disease and foreign invaders.</p>
+        </div>
+        </form>
+    </div>
+    <div class="qseven">
+        <form id="forms classify-form">
+            <span class="back">< Back</span> (<span>7 of 8</span>)
+        <h4>Red Blood Cell Count</h4>
+        <p>The red blood cell count in <i>millions/cmm</i>. For example, 3.4</p>
+        <br/><input type="number" placeholder="" id="rct"/><br/><br/>
+        <input type="submit" class="btn btn-primary next" value="Next">
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What are Red Blood Cells?</a>
+            <p class="information">Red blood cells are the blood cells that carry oxygen. Red cells contain hemoglobin and it is the hemoglobin which permits them to transport oxygen (and carbon dioxide). </p>
+        </div>
+        </form>
+    </div>
+    <div class="qeight">
+        <form id="forms classify-form">
+            <span class="back">< Back</span> (<span>8 of 8</span>)
+        <h4>Hypertension</h4>
+        <br/><select class="select"  id="htnt">
+            <option class="htn" value="">--Select--</option>
+            <option class="htnyes" value="yes">Yes</option>
+            <option class="htnno" value="no">No</option>
+        </select><br/><br/>
+        <input style="width:200px;" type="submit" class="btn btn-primary finish" value="Finish">
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What is Hypertension?</a>
+            <p class="information">Hypertension (HTN or HT), also known as high blood pressure (HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms.</p>
+        </div>
+        </form>
+    </div>
+    <div class="result">Loading your Results...<br/> Please Wait.
+    </div>
+    <a href="contribute" class="report" style="display:nones">Report inappropriate classification?</a>
+
+</div>
+</div>
+
+<section class="probootstrap-section probootstrap-section-dark">
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 section-heading mb50 text-center probootstrap-animate">
+<h2>Know About the Creator</h2>
+<p class="lead">Ahh! I'm sorry if I forgot to tell you about my creator. He'sSneha Gupta.<br/><a href="https://ayushanand18.github.io/about-me"> </a></p>
+</div>
+</div>
+</div>
+</section>
+
+
+<footer role="contentinfo" class="probootstrap-footer">
+<div class="container">
+<div class="row">
+
+<div class="col-md-4">
+<div class="probootstrap-footer-widget">
+<h3>About   </h3>
+<p>Nephron AI is the child project of NightLight AI bySneha Gupta. This is a Machine Learning powered tool for diagnosis and analysis of causes for Chronic Kidney Disease with about 99.9%** accuracy.</p>
+<p><a href="about" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="probootstrap-footer-widget">
+<h3>Important Links</h3>
+<ul class="probootstrap-footer-widget">
+<li><a href="/">Home (NightLight AI)</a></li>
+<li><a href="/privacy">Privacy</a></li>
+<li><a href="terms">Terms</a></li>
+<small>By using our services you agree to our <a href="terms">Terms of Services</a> and <a href="/cookie">Cookie Policy</a></small>
+</ul>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="probootstrap-footer-widget">
+<h3>Connect With Us</h3>
+<ul class="probootstrap-footer-social">
+<li><a href="https://twitter.com/theayushanand"><i class="icon-twitter"></i></a></li>
+<li><a href=""><i class="icon-facebook"></i></a></li>
+<li><a href=""><i class="icon-instagram2"></i></a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+<div class="">
+<div class="text-center">
+<p>
+<small>&copy; 2020 <a href="https://ayushanand18.github.io/" target="_blank">NightLight AI</a>. All Rights Reserved. </small><br>
+<a href="#" class="js-backtotop">Back to top</a>
+</p>
+</div>
+</div>
+</footer>
+
+<script src="js/scripts.min.js" type="ef720126cb2c08d7b1817c75-text/javascript"></script>
+<script src="js/main.min.js" type="ef720126cb2c08d7b1817c75-text/javascript"></script>
+<script src="js/custom.js" type="ef720126cb2c08d7b1817c75-text/javascript"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="ef720126cb2c08d7b1817c75-|49" defer=""></script></body>
+<script src="js/jquery.min.js" ></script>
+<!--Loading Firebase and its binaries-->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBatfxmiZStN0MSyIvBlqaGj8ixAtXSkfc",
+    authDomain: "nephron-ai.firebaseapp.com",
+    databaseURL: "https://nephron-ai.firebaseio.com",
+    projectId: "nephron-ai",
+    storageBucket: "nephron-ai.appspot.com",
+    messagingSenderId: "53854256710",
+    appId: "1:53854256710:web:2dba01c916cfb536711447",
+    measurementId: "G-S3ZE21NK3G"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  var db = firebase.firestore();
+</script>
+<!-- Load Script for Disease Prediction Function -->
+
+<script src="js/predict.min.js"></script>
+<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-129803213-2" defer></script>
+<script defer>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129803213-2');
+</script>
+<div class="pseudo-div"></div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+$(".popup-vimeo").unbind();
+$(".watch-intro").unbind();
+$(".watch-intro").click(function(e){
+    e.preventDefault();
+});
+$(".popup-vimeo").click(function(e){
+    e.preventDefault();
+    window.location.href="classify"
+});
